@@ -1,0 +1,127 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #0D1117; /* Dark theme background */
+    color: #C9D1D9; /* Text color for readability */
+}
+
+/* Shared Button Styles */
+.btn, .discord-login-btn, .verify-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #5865F2; /* Discord's brand color for the login button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover, .discord-login-btn:hover, .verify-btn:hover {
+    background-color: #4752C4; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px; /* Adjusted for more space */
+    height: 100vh;
+    background-color: #161B22;
+    color: #C9D1D9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between items */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+}
+
+/* User Info and Status Info Styling */
+.user-info, .status-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.icon {
+    background-color: #5865F2; /* Background to make icons stand out */
+    color: white;
+    padding: 8px;
+    border-radius: 50%; /* Circular background for icons */
+    font-size: 20px;
+}
+
+.discord-name, .verification-status {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Modern Hover Effects */
+.user-info:hover, .status-info:hover {
+    background-color: #0D1117;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+/* Main Content Area Styles for Verify Page */
+.verify-content {
+    margin-left: 200px; /* Offset by the sidebar width */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 40px); /* Adjust based on footer height */
+}
+
+.verify-btn {
+    background-color: #238636; /* Green, for the verify button */
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #0D1117; /* Matching the dark theme background */
+    color: #C9D1D9; /* Text color for readability */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    border-top: 1px solid #30363d; /* Subtle top border for definition */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    .verify-content, .site-footer {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .btn, .discord-login-btn, .verify-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
