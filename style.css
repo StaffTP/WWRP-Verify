@@ -1,163 +1,163 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  body {
-    background-color: #0D1117; /* GitHub dark theme background */
-    color: #C9D1D9; /* GitHub dark theme text color */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+body {
+  background-color: #0D1117;
+  color: #C9D1D9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .login-container {
-    background-color: #161B22; /* Slightly lighter than body for contrast */
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-  }
-  
-  .discord-login-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 15px; /* Adjust as necessary */
-    background-color: #5865F2;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
+.login-container {
+  background-color: #161B22;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.discord-login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #5865F2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 
-  .navbar {
-    background-color: #161B22;
-    color: #C9D1D9;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  
-  .main-content {
-    text-align: center;
-    padding-top: 60px; /* Space for fixed navbar */
-  }
-  
-  .verify-btn {
-    background-color: #238636; /* GitHub button color */
-    color: white;
-    padding: 12px 24px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px; /* Space above button */
-  }
+.navbar {
+  background-color: #161B22;
+  color: #C9D1D9;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
-  .discord-login-btn, .verify-btn {
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .discord-login-btn:hover, .verify-btn:hover {
-    background-color: darken(#5865F2, 10%); /* Make button darker on hover */
-    transform: translateY(-2px); /* Slight lift */
-  }
-  
-  .verify-btn:hover {
-    background-color: darken(#238636, 10%); /* GitHub button hover effect */
-  }
+.main-content {
+  text-align: center;
+  padding-top: 60px;
+}
 
-  .logo-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px; /* Adjusts space around the logo */
-  }
-  
-  .logo-container img {
-    height: 100px; /* Adjust based on your preference */
-    width: auto; /* Maintains aspect ratio */
-  }
+.verify-btn {
+  background-color: #238636;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
 
-  .navbar {
-    padding-left: 70px; /* Adjust based on the logo's width */
-  }
+.discord-login-btn, .verify-btn {
+  transition: background-color 0.3s, transform 0.2s;
+}
 
-  .login-container h1 {
-    color: #C9D1D9; /* Light color for visibility on dark background */
-    margin-bottom: 20px; /* Spacing between the heading and the button */
-    text-align: center; /* Center the heading */
-    font-size: 24px; /* Suitable font size for a heading */
-    font-weight: normal; /* Adjust based on your design preference */
-  }
+.discord-login-btn:hover, .verify-btn:hover {
+  background-color: darken(#5865F2, 10%);
+  transform: translateY(-2px);
+}
 
-  @media (max-width: 600px) {
-    .button-group {
-      flex-direction: column; /* Stack buttons vertically on small screens */
-      gap: 5px;
-    }
-  
-    .discord-login-btn, .forum-btn {
-      width: 100%; /* Full width for easier tapping on mobile */
-    }
-  }
-  
+.verify-btn:hover {
+  background-color: darken(#238636, 10%);
+}
 
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.logo-container img {
+  height: 100px;
+  width: auto;
+}
+
+.navbar {
+  padding-left: 70px;
+}
+
+.login-container h1 {
+  color: #C9D1D9;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+@media (max-width: 600px) {
   .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Creates space between the buttons */
+    flex-direction: column;
+    gap: 5px;
   }
 
-  .forum-btn:hover {
-    background-color: #494c49; /* Slightly darker shade of green */
-    transform: translateY(-2px); /* Maintain the lift effect */
+  .discord-login-btn, .forum-btn {
+    width: 100%;
   }
-  
-  
-  .forum-btn {
-    background-color: #494c49; /* A green color for distinction */
-    transform: translateY(-2px); /* Slight lift */
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .site-footer {
-    background-color: #0D1117; /* Dark background for a sleek look */
-    color: #C9D1D9; /* Light text color for contrast */
-    text-align: center;
-    padding: 20px 0; /* Adequate padding for visual comfort */
-    font-size: 16px;
-    border-top: 1px solid #30363d; /* Slight border for a subtle separation */
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.forum-btn:hover {
+  background-color: #494c49;
+  transform: translateY(-2px);
+}
+
+
+.forum-btn {
+  background-color: #494c49;
+  transform: translateY(-2px);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.site-footer {
+  background-color: #0D1117;
+  color: #C9D1D9;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  border-top: 1px solid #30363d;
 }
 
 .footer-content {
-    margin: auto;
-    max-width: 1200px; /* Ensures content is centered and not too wide on large screens */
-    padding: 0 20px; /* Padding on sides for spacing */
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 @media (max-width: 768px) {
-    .site-footer {
-        font-size: 14px; /* Slightly smaller font size on mobile devices */
-    }
-    
-    .footer-content {
-        padding: 0 10px; /* Less side padding on smaller screens */
-    }
+  .site-footer {
+      font-size: 14px;
+  }
+  
+  .footer-content {
+      padding: 0 10px;
+  }
 }

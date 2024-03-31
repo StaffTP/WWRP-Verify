@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const discordNameEl = document.querySelector('.discord-name');
     const verificationStatusEl = document.querySelector('.verification-status');
     
-    // Example of setting dynamic content
-    discordNameEl.textContent = 'YourDiscordName#1234'; // Replace with dynamic data
-    verificationStatusEl.textContent = 'Verified'; // Replace based on actual status
+    discordNameEl.textContent = 'YourDiscordName#1234';
+    verificationStatusEl.textContent = 'Verified';
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -14,12 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     verifyButton.addEventListener('click', function() {
         verificationStatus.textContent = 'Verified';
-        verificationStatus.style.color = '#28A745'; // Ensure this targets the span correctly
+        verificationStatus.style.color = '#28A745';
 
-        // Optional: Log to console or further actions
+        // works!
         console.log('Verification status updated.');
-        // For example, redirect or display a message
-        // window.location.href = 'nextPage.html';
+        // TODO: COMPLETE REDIS TABLE
     });
 });
 

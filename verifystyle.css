@@ -15,24 +15,25 @@
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-  }
+}
   
-  .logo-container img {
-    height: 50px; /* Adjust based on your preference */
+.logo-container img {
+    height: 50px;
     width: auto;
     display: block;
     position: absolute;
-    top: 10px; /* Adjust spacing from the top */
-    left: 20px; /* Adjust spacing from the left */
-  }
+    top: 10px;
+    left: 20px;
+}
 
-  .navbar {
-    padding-left: 70px; /* Adjust based on the logo's width */
-  }
+.navbar {
+    padding-left: 70px;
+}
+
 .container {
     text-align: center;
     width: 100%;
-    max-width: 600px; /* Limits the width for larger screens */
+    max-width: 600px;
 }
 
 .user-card {
@@ -44,32 +45,32 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align the items for a neat layout */
-    gap: 15px; /* Increase gap for better spacing */
+    align-items: center;
+    gap: 15px;
 }
 
 .discord-name {
     margin: 0;
     color: #58A6FF;
     font-size: 24px;
-    font-weight: bold; /* Emphasize the discord name */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for depth */
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .verification-status {
     font-size: 18px;
-    color: #FF6E6E; /* Start with red to indicate not verified */
-    font-weight: 500; /* Slightly bold for importance */
+    color: #FF6E6E;
+    font-weight: 500;
 }
 
 .verification-status.verified {
-    color: #28A745; /* Switch to green for verified status */
+    color: #28A745;
 }
 
 .verify-btn {
-    background-color: #5865F2; /* Discord's brand color */
+    background-color: #5865F2;
     color: white;
-    padding: 10px 30px; /* Increased side padding for a wider appearance */
+    padding: 10px 30px;
     font-size: 16px;
     border: none;
     border-radius: 6px;
@@ -77,34 +78,30 @@
     transition: background-color 0.3s, box-shadow 0.2s, transform 0.1s;
     cursor: pointer;
     outline: none;
-    display: block; /* Use block for better control over width */
+    display: block;
     text-decoration: none;
-    width: auto; /* Adjusts to content width due to padding */
-    min-width: 200px; /* Ensures the button is always at least 200px wide */
-    margin: 0 auto; /* Centers the button if the container's width is set */
+    width: auto;
+    min-width: 200px;
+    margin: 0 auto;
 }
 
 .verify-btn:hover, .verify-btn:focus {
-    background-color: #4752C4; /* Slightly darker shade for hover state */
+    background-color: #4752C4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px); /* Lift effect */
+    transform: translateY(-2px);
 }
 
 .verify-btn:active {
-    background-color: #3B3FCA; /* Even darker for the active state */
+    background-color: #3B3FCA;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transform: translateY(1px); /* Pressed effect */
+    transform: translateY(1px);
 }
-
-
-
-
 
 .site-footer {
     position: fixed;
-    left: 0; /* Ensure it starts from the far left */
+    left: 0;
     bottom: 0;
-    width: 100%; /* Span the full width of the viewport */
+    width: 100%;
     text-align: center;
     padding: 10px 0;
     background-color: #0D1117;
@@ -112,9 +109,8 @@
     border-top: 1px solid #30363d;
 }
 
-
 @media (max-width: 768px) {
     .user-card, .verify-btn {
-        width: 90%; /* Slightly smaller width on mobile for padding */
+        width: 90%;
     }
 }
