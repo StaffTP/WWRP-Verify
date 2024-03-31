@@ -6,20 +6,17 @@
     <link rel="stylesheet" href="verifystyle.css">
 </head>
 <body>
-    <aside class="sidebar">
-        <div class="user-info">
-            <span class="icon">👤</span> <!-- Replace with an SVG/icon -->
-            <p class="discord-name">DiscordName#1234</p>
-        </div>
-        <div class="status-info">
-            <span class="icon">🔒</span> <!-- Replace with an SVG/icon -->
-            <p class="verification-status">Not Verified</p>
-        </div>
-    </aside>
+    <div class="logo-container">
+        <img src="https://content.invisioncic.com/y305077/monthly_2022_01/Website_Home.png.acb5030a1d02293ab25cdaea87f2f22b.png" alt="Website Logo">
+    </div>
+    <div class="user-card">
+        <h2 class="discord-name">DiscordName#1234</h2>
+        <p class="verification-status">Status: <span id="verificationStatus">Not Verified</span></p>
+        <button id="verifyBtn" class="verify-btn">Verify</button>
+        
+    </div>
     
-    <main class="verify-content">
-        <button class="verify-btn">Verify</button>
-    </main>
+
     <footer class="site-footer">
         © Worldwide Roleplay 2024
     </footer>
